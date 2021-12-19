@@ -1,0 +1,12 @@
+<div class="container">
+  <section class="login">
+    <h1 class="text-center mt-5 text-warning">Editar Tranferencia</h1>
+    <form>
+        <input [(ngModel)]="conta.Cliente" type="text" name="text"  placeholder="Nome..." class="descricao" name="cliente">
+        <input [(ngModel)]="conta.valor" type="number" name="text" placeholder="Valor..." class="obs" name="valor">
+        <input [(ngModel)]="conta.Conta" type="text" name="text" placeholder="conta" class="obs" name="Conta"><br><br><br>
+        <button (click)="modificar()" class="btn-info">Editar</button>
+    </form>
+  </section>
+  </div>
+

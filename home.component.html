@@ -1,0 +1,28 @@
+<h2 class="mt-3"><i class="bi bi-bookmark-star-fill"></i> Lista de Tarefas</h2>
+
+<div class="container mt-4 w-75">
+<table class="table table-dark table-striped">
+  <thead>
+    <tr class="table-dark text-warning">
+      <th scope="col">Id</th>
+      <th scope="col">Cliente</th>
+      <th scope="col">valor</th>
+      <th scope="col">Conta</th>
+      <th scope="col">Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let item of ListarContas" style="box-shadow: inset 0 0.5rem 2rem rgba(105, 105, 105, 0.144);">
+      <th scope="row">{{item.id_transferencia}}</th>
+      <td>{{item.Cliente}}</td>
+      <td>{{item.valor}}</td>
+      <td>{{item.Conta}}</td>
+      <td>
+        <a (click)='editar(item.id_transferencia)' class="mx-2 text-warning"><i class="bi bi-pencil-square"></i></a>
+        <a (click)='excluir(item.id_transferencia)' class="text-warning"><i class="bi bi-trash-fill"></i></a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
